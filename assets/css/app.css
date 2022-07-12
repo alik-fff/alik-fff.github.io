@@ -1,0 +1,267 @@
+body {
+    margin: 0
+}
+
+body {
+    height: 100vh;
+    background-color: #000;
+    overflow: hidden;
+}
+
+body.is-loading .barba-container {
+    opacity: 0
+}
+
+body.y-scroll .q_smooth {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    margin: auto;
+    will-change: transform;
+}
+
+.has-scroll-smooth body {
+    overflow: hidden
+}
+
+body {
+    color: #fff;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-text-size-adjust: 100%;
+    -webkit-font-smoothing: antialiased;
+    box-sizing: border-box;
+    font-family: 'Graphik', Arial, Helvetica, sans-serif
+}
+
+@media screen and (max-width: 500px) {
+    body.touch .carousel {
+        margin-left: -10vw
+    }
+
+    body.touch .carousel .carousel__planes {
+        width: calc((120vw) * 4);
+        padding: 0 0vw 0 10vw;
+        margin-top: 30px
+    }
+
+    body.touch .carousel .carousel__plane {
+        width: 75vw;
+        margin-right: 30px
+    }
+
+    body.touch .carousel .carousel__image {
+        height: 40vh;
+        min-height: 200px
+    }
+}
+
+.desc {
+    position: relative;
+    min-width: 60px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: -40%;
+    text-align: center;
+    font-size: 40px;
+}
+
+
+@media (prefers-reduced-motion: no-preference) {
+    :root {
+        scroll-behavior: smooth;
+    }
+}
+
+body {
+    margin: 0;
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    -webkit-text-size-adjust: 100%;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    display: flex;
+    justify-content: center;
+}
+
+.timer__items {
+    display: flex;
+    font-size: 90px;
+}
+
+.timer__item {
+    position: relative;
+    min-width: 60px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 30px;
+    padding-bottom: 15px;
+    text-align: center;
+}
+
+.timer__item::before {
+    content: attr(data-title);
+    display: block;
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    font-size: 25px;
+}
+
+.timer__item:not(:last-child)::after {
+    content: ':';
+    position: absolute;
+    right: -16px;
+}
+
+.heart {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    border: solid 1px red;
+    border-top: none;
+    border-left: none;
+}
+
+.heart:before,
+.heart:after {
+    position: absolute;
+    content: ' ';
+    -webkit-border-radius: 50px 0 0 50px;
+    /* для Chrome и Safari */
+    -moz-border-radius: 50px 0 0 50px;
+    /* для Firefox */
+    border-radius: 50px 0 0 50px;
+    width: 70px;
+    height: 100px;
+    border: solid 1px red;
+    border-right: none;
+}
+
+.heart {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    -webkit-transform: rotate(45deg);
+    /* для Chrome и Safari */
+    -moz-transform: rotate(45deg);
+    /* для Firefox */
+    -o-transform: rotate(45deg);
+    /* для Opera */
+    transform: rotate(45deg);
+    border: solid 1px red;
+    border-top: none;
+    border-left: none;
+}
+
+.heart:before,
+.heart:after {
+    position: absolute;
+    content: ' ';
+    -webkit-border-radius: 50px 0 0 50px;
+    -moz-border-radius: 50px 0 0 50px;
+    border-radius: 50px 0 0 50px;
+    width: 70px;
+    height: 10аааааааааааааааааааа0px;
+    border: solid 1px red;
+    border-right: none;
+    left: -70px;
+}
+
+.heart:after {
+    position: absolute;
+    left: 15px;
+    top: -85px;
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+}
+
+.heart {
+    background: red;
+    /* для браузеров, которые не поддерживают градиент */
+    background: -webkit-radial-gradient(115% 50%, 75px 110px, #8B0000, #8B0000, red);
+    /* для Chrome и Safari */
+    background: -moz-radial-gradient(170% 50%, circle, #8B0000 0%, #8B0000 52%, red 76%);
+    /* для Firefox */
+    background: -o-radial-gradient(115% 50%, 75px 110px, #8B0000, #8B0000, red);
+    /* для Opera */
+    background: radial-gradient(115% 50%, 75px 110px, #8B0000, #8B0000, red);
+    /* по стандартам CSS3 */
+}
+
+.heart:before {
+    background: red;
+    background: -webkit-radial-gradient(15% 50%, 65px 65px, #FFE4E1, red);
+    background: -moz-radial-gradient(15% 50%, circle, #FFE4E1, red 85%);
+    background: -o-radial-gradient(15% 50%, 65% 65%, #FFE4E1, red);
+    background: radial-gradient(15% 50%, 65% 65%, #FFE4E1, red);
+}
+
+.heart:after {
+    background: red;
+    background: -webkit-radial-gradient(50% 80%, 85px 80px, #FFB6C1, red, #8B0000);
+    background: -moz-radial-gradient(50% 80%, circle, #FFB6C1, red, #8B0000 90%);
+    background: -o-radial-gradient(50% 80%, 85px 80px, #FFB6C1, red, #8B0000);
+    background: radial-gradient(50% 80%, 85px 80px, #FFB6C1, red, #8B0000);
+}
+
+.heart {
+    animation-name: 'anime';
+    /* имя кейфрейма для анимации */
+    animation-duration: 300ms;
+    /* длительность анимации */
+    animation-iteration-count: infinite;
+    /* количество повторений, в данном случае - бесконечно */
+    animation-direction: alternate;
+    /* проигрывать анимацию в прямом и в обратном порядке */
+    animation-timing-function: ease-in;
+    /* вычисление временных промежутков для анимации, в данном случае анимация ускоряется */
+}
+
+.heart {
+    -webkit-animation-name: 'anime';
+    -webkit-animation-duration: 300ms;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-direction: alternate;
+    -webkit-animation-timing-function: ease-in;
+}
+
+@-webkit-keyframes 'anime' {
+    from {
+        -webkit-transform: scale(1) rotate(45deg);
+    }
+
+    to {
+        -webkit-transform: scale(1.1) rotate(45deg);
+    }
+}
+
+@keyframes 'anime' {
+    from {
+        transform: scale(1) rotate(45deg);
+    }
+
+    to {
+        transform: scale(1.1) rotate(45deg);
+    }
+}
+
+.heart {
+    margin-left: 102%;
+}
+
+.left {
+    margin-left: -80%;
+    margin-top: 65%;
+}
+.right {
+    margin-top: -19%;
+    margin-left: 153%;
+}
